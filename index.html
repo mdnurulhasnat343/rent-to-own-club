@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Rent To Own Club - Start Your Homeownership Journey Today!</title>
+    <meta name="description" content="Stop renting and start owning. Low down payments and no credit check required.">
+    
+    <!-- Facebook Open Graph Meta Tags -->
+    <meta property="og:title" content="Rent To Own Club - Start Your Homeownership Journey Today!">
+    <meta property="og:description" content="Stop renting and start owning. Low down payments and no credit check required.">
+    <meta property="og:image" content="https://i.ibb.co.com/M5Zrbh6S/Screenshot-2025-1225-171625.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Rent To Own Club - Homeownership Made Simple">
+    <meta property="og:url" content="https://renttoownclub.com">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Rent To Own Club">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Facebook CTA Button -->
+    <meta property="fb:app_id" content="your-app-id">
+    <meta name="facebook:cta" content="APPLY_NOW">
+    
+    <!-- Additional Social Media Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Rent To Own Club - Start Your Homeownership Journey Today!">
+    <meta name="twitter:description" content="Stop renting and start owning. Low down payments and no credit check required.">
+    <meta name="twitter:image" content="https://i.ibb.co.com/M5Zrbh6S/Screenshot-2025-1225-171625.png">
+    
+    <style>
+        /* CSS Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /* Base Styles */
+        :root {
+            --primary-color: #2a5c8b;
+            --primary-dark: #1d4568;
+            --accent-color: #e76f51;
+            --light-color: #f8f9fa;
+            --dark-color: #212529;
+            --gray-color: #6c757d;
+            --border-radius: 8px;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: var(--dark-color);
+            background-color: white;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0;
+        }
+        
+        /* Container */
+        .container {
+            width: 100%;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        header {
+            text-align: center;
+            padding: 40px 0 20px;
+        }
+        
+        .logo {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        
+        .logo span {
+            color: var(--accent-color);
+        }
+        
+        /* Main Content */
+        main {
+            padding: 20px 0 40px;
+        }
+        
+        /* Hero Image */
+        .hero-image {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto 40px;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+        
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        /* Content Section */
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        .subtitle {
+            font-size: 1.5rem;
+            color: var(--accent-color);
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+        
+        .description {
+            font-size: 1.2rem;
+            color: var(--dark-color);
+            margin-bottom: 40px;
+            line-height: 1.7;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* CTA Button */
+        .cta-container {
+            margin: 40px 0;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            font-size: 1.4rem;
+            font-weight: 700;
+            padding: 18px 45px;
+            border-radius: var(--border-radius);
+            text-decoration: none;
+            transition: var(--transition);
+            box-shadow: 0 4px 15px rgba(231, 111, 81, 0.3);
+            border: none;
+            cursor: pointer;
+        }
+        
+        .cta-button:hover {
+            background-color: #d65c3e;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(231, 111, 81, 0.4);
+        }
+        
+        /* Benefits List */
+        .benefits {
+            max-width: 800px;
+            margin: 50px auto 0;
+            text-align: left;
+            background-color: var(--light-color);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+        }
+        
+        .benefits h2 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 1.8rem;
+        }
+        
+        .benefits-list {
+            list-style-type: none;
+            font-size: 1.1rem;
+        }
+        
+        .benefits-list li {
+            margin-bottom: 15px;
+            padding-left: 30px;
+            position: relative;
+        }
+        
+        .benefits-list li:before {
+            content: "✓";
+            color: var(--accent-color);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 50px;
+            border-top: 1px solid #eee;
+            color: var(--gray-color);
+            font-size: 0.9rem;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 15px;
+            }
+            
+            header {
+                padding: 30px 0 15px;
+            }
+            
+            .logo {
+                font-size: 1.8rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .subtitle {
+                font-size: 1.3rem;
+            }
+            
+            .description {
+                font-size: 1.1rem;
+                padding: 0 10px;
+            }
+            
+            .cta-button {
+                font-size: 1.2rem;
+                padding: 16px 35px;
+            }
+            
+            .benefits {
+                padding: 25px 20px;
+                margin: 40px 10px 0;
+            }
+            
+            .benefits h2 {
+                font-size: 1.5rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.7rem;
+            }
+            
+            .subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .description {
+                font-size: 1rem;
+            }
+            
+            .cta-button {
+                font-size: 1.1rem;
+                padding: 15px 30px;
+                width: 100%;
+                text-align: center;
+            }
+        }
+        
+        /* Accessibility */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+        
+        /* Focus styles for accessibility */
+        .cta-button:focus {
+            outline: 3px solid var(--primary-color);
+            outline-offset: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <div class="logo">Rent To Own<span>Club</span></div>
+        </header>
+        
+        <!-- Main Content -->
+        <main>
+            <!-- Hero Image -->
+            <div class="hero-image">
+                <img src="https://i.ibb.co.com/GQ8v16sR/cr-w-1333-h-1000.jpg" alt="Beautiful modern home available through Rent To Own Club">
+            </div>
+            
+            <!-- Content Section -->
+            <div class="content">
+                <h1>🏠 Your Path to Homeownership Starts Here!</h1>
+                <p class="subtitle">Join Our Rent To Own Club Today!</p>
+                
+                <div class="description">
+                    <p>Stop throwing money away on rent! Our program helps you move into your dream home with low down payments. Discover a smarter way to own a home.</p>
+                </div>
+                
+                <!-- CTA Button -->
+                <div class="cta-container">
+                    <a href="https://www.chd93jds.com/2686CZWN/3QQG7/" class="cta-button" id="main-cta">
+                        Find Your Dream Home
+                    </a>
+                </div>
+                
+                <!-- Benefits Section -->
+                <div class="benefits">
+                    <h2>Why Choose Rent To Own Club?</h2>
+                    <ul class="benefits-list">
+                        <li><strong>No Credit Check Required</strong> - Your credit score won't stop you from owning a home</li>
+                        <li><strong>Low Down Payment</strong> - Get started with minimal upfront costs</li>
+                        <li><strong>Build Equity While You Rent</strong> - A portion of your payment goes toward your purchase</li>
+                        <li><strong>Flexible Terms</strong> - Choose a timeline that works for your financial situation</li>
+                        <li><strong>Professional Guidance</strong> - Our experts help you through every step of the process</li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+        
+        <!-- Footer -->
+        <footer>
+            <p>Copyright © 2025. All rights reserved.</p>
+            <p style="margin-top: 10px; font-size: 0.8rem;">Rent To Own Club is a housing assistance program that helps individuals transition from renting to homeownership.</p>
+        </footer>
+    </div>
+    
+    <!-- Simple JavaScript for tracking and interactions -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Track CTA clicks
+            const ctaButton = document.getElementById('main-cta');
+            
+            ctaButton.addEventListener('click', function() {
+                // In a real implementation, you would send this data to analytics
+                console.log('CTA clicked - Redirecting to application');
+                
+                // Optional: You could add a slight delay to track the click before redirecting
+                setTimeout(() => {
+                    window.location.href = this.href;
+                }, 100);
+            });
+            
+            // Ensure smooth scrolling for any anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 20,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
