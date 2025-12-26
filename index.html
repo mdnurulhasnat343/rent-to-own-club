@@ -7,11 +7,11 @@
     <!-- Facebook Meta Tags -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.renttoownclub.com/">
-    <meta property="og:title" content="Rent To Own Club | Find Your Dream Home Today">
-    <meta property="og:description" content="Bad Credit? Low Income? No Problem! Get approved for your dream home with our Rent To Own program. No Down Payment required. Start today!">
-    <meta property="og:image" content="https://i.ibb.co.com/GQ8v16sR/cr-w-1333-h-1000.jpg">
-    <meta property="og:image:width" content="1333">
-    <meta property="og:image:height" content="1000">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://i.ibb.co.com/pj7Wz8ZW/Screenshot-2025-1226-104632.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <meta property="og:site_name" content="Rent To Own Club">
     <meta property="og:locale" content="en_US">
     
@@ -36,6 +36,16 @@
             padding: 25px 15px;
             text-align: center;
             border-bottom: 1px solid #e9ecef;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 0.8s ease forwards;
+        }
+        
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
         
         .hero-title {
@@ -44,7 +54,8 @@
             font-weight: 700;
             margin-bottom: 15px;
             opacity: 0;
-            animation: titlePop 0.8s ease 0.3s forwards;
+            transform: scale(0.9);
+            animation: titlePop 0.6s ease 0.3s forwards;
         }
         
         @keyframes titlePop {
@@ -65,15 +76,12 @@
             max-width: 700px;
             margin: 15px auto;
             opacity: 0;
+            transform: scale(0.95);
             animation: zoomIn 0.7s ease 0.5s forwards;
         }
         
         @keyframes zoomIn {
-            0% {
-                opacity: 0;
-                transform: scale(0.95);
-            }
-            100% {
+            to {
                 opacity: 1;
                 transform: scale(1);
             }
@@ -91,6 +99,14 @@
             max-width: 700px;
             margin: 0 auto;
             text-align: center;
+            opacity: 0;
+            animation: fadeIn 0.8s ease 0.8s forwards;
+        }
+        
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
         }
         
         .body-title {
@@ -99,15 +115,12 @@
             font-weight: 700;
             margin-bottom: 12px;
             opacity: 0;
+            transform: translateX(-30px);
             animation: slideInLeft 0.6s ease 1s forwards;
         }
         
         @keyframes slideInLeft {
-            0% {
-                opacity: 0;
-                transform: translateX(-30px);
-            }
-            100% {
+            to {
                 opacity: 1;
                 transform: translateX(0);
             }
@@ -119,15 +132,12 @@
             margin-bottom: 25px;
             line-height: 1.5;
             opacity: 0;
+            transform: translateX(30px);
             animation: slideInRight 0.6s ease 1.2s forwards;
         }
         
         @keyframes slideInRight {
-            0% {
-                opacity: 0;
-                transform: translateX(30px);
-            }
-            100% {
+            to {
                 opacity: 1;
                 transform: translateX(0);
             }
@@ -181,15 +191,6 @@
             margin-top: 30px;
             opacity: 0;
             animation: fadeIn 0.8s ease 1.6s forwards;
-        }
-        
-        @keyframes fadeIn {
-            0% {
-                opacity: 0;
-            }
-            100% {
-                opacity: 1;
-            }
         }
         
         /* Mobile Responsive */
@@ -262,12 +263,11 @@
     </footer>
 
     <script>
-        // ওয়ান-টাইম অ্যানিমেশন - শুধু প্রথম লোডে
+        // ওয়ান-টাইম অ্যানিমেশন
         document.addEventListener('DOMContentLoaded', function() {
-            // সব অ্যানিমেশন একবার চলবে
             console.log('ল্যান্ডিং পেজ লোড হয়েছে - অ্যানিমেশন চলছে');
             
-            // Simple button click animation
+            // Button click effects
             const button = document.querySelector('.listing-button');
             button.addEventListener('click', function(e) {
                 // Simple feedback effect
@@ -278,17 +278,15 @@
             });
         });
         
-        // Prevent animations on page refresh if already seen
+        // Prevent animations on refresh
         let animationPlayed = sessionStorage.getItem('animationPlayed');
         if (animationPlayed) {
-            // If already played in this session, remove animations
             document.querySelectorAll('*').forEach(el => {
                 el.style.animation = 'none';
                 el.style.opacity = '1';
                 el.style.transform = 'none';
             });
         } else {
-            // Mark animation as played
             sessionStorage.setItem('animationPlayed', 'true');
         }
     </script>
