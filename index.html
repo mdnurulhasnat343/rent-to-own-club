@@ -4,379 +4,293 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- SEO Meta Tags -->
-    <title>Rent To Own Club - Start Your Homeownership Journey Today!</title>
-    <meta name="description" content="Stop renting and start owning. Low down payments and no credit check required.">
-    
-    <!-- Facebook Open Graph Meta Tags -->
-    <meta property="og:title" content="Rent To Own Club - Start Your Homeownership Journey Today!">
-    <meta property="og:description" content="Stop renting and start owning. Low down payments and no credit check required.">
-    <meta property="og:image" content="https://i.ibb.co.com/M5Zrbh6S/Screenshot-2025-1225-171625.png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Rent To Own Club - Homeownership Made Simple">
-    <meta property="og:url" content="https://renttoownclub.com">
+    <!-- Facebook Meta Tags -->
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.renttoownclub.com/">
+    <meta property="og:title" content="Rent To Own Club | Find Your Dream Home Today">
+    <meta property="og:description" content="Bad Credit? Low Income? No Problem! Get approved for your dream home with our Rent To Own program. No Down Payment required. Start today!">
+    <meta property="og:image" content="https://i.ibb.co.com/GQ8v16sR/cr-w-1333-h-1000.jpg">
+    <meta property="og:image:width" content="1333">
+    <meta property="og:image:height" content="1000">
     <meta property="og:site_name" content="Rent To Own Club">
     <meta property="og:locale" content="en_US">
     
-    <!-- Facebook CTA Button -->
-    <meta property="fb:app_id" content="your-app-id">
-    <meta name="facebook:cta" content="APPLY_NOW">
-    
-    <!-- Additional Social Media Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Rent To Own Club - Start Your Homeownership Journey Today!">
-    <meta name="twitter:description" content="Stop renting and start owning. Low down payments and no credit check required.">
-    <meta name="twitter:image" content="https://i.ibb.co.com/M5Zrbh6S/Screenshot-2025-1225-171625.png">
-    
     <style>
-        /* CSS Reset */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
         
-        /* Base Styles */
-        :root {
-            --primary-color: #2a5c8b;
-            --primary-dark: #1d4568;
-            --accent-color: #e76f51;
-            --light-color: #f8f9fa;
-            --dark-color: #212529;
-            --gray-color: #6c757d;
-            --border-radius: 8px;
-            --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            --transition: all 0.3s ease;
-        }
-        
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-            line-height: 1.6;
-            color: var(--dark-color);
-            background-color: white;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0;
+            font-family: 'Arial', 'Helvetica', sans-serif;
+            background-color: #ffffff;
+            color: #333333;
+            line-height: 1.4;
+            overflow-x: hidden;
         }
         
-        /* Container */
-        .container {
-            width: 100%;
-            padding: 0 20px;
-        }
-        
-        /* Header */
-        header {
+        /* Hero Section */
+        .hero-section {
+            background-color: #f8f9fa;
+            padding: 25px 15px;
             text-align: center;
-            padding: 40px 0 20px;
+            border-bottom: 1px solid #e9ecef;
         }
         
-        .logo {
-            font-size: 2.2rem;
+        .hero-title {
+            color: #2c3e50;
+            font-size: 22px;
             font-weight: 700;
-            color: var(--primary-color);
-            margin-bottom: 10px;
+            margin-bottom: 15px;
+            opacity: 0;
+            animation: titlePop 0.8s ease 0.3s forwards;
         }
         
-        .logo span {
-            color: var(--accent-color);
+        @keyframes titlePop {
+            0% {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            70% {
+                transform: scale(1.05);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
         }
         
-        /* Main Content */
-        main {
-            padding: 20px 0 40px;
+        .hero-image-container {
+            max-width: 700px;
+            margin: 15px auto;
+            opacity: 0;
+            animation: zoomIn 0.7s ease 0.5s forwards;
         }
         
-        /* Hero Image */
+        @keyframes zoomIn {
+            0% {
+                opacity: 0;
+                transform: scale(0.95);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        
         .hero-image {
             width: 100%;
-            max-width: 900px;
-            margin: 0 auto 40px;
-            border-radius: var(--border-radius);
-            overflow: hidden;
-            box-shadow: var(--shadow);
+            border-radius: 10px;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
         }
         
-        .hero-image img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-        
-        /* Content Section */
-        .content {
-            max-width: 800px;
+        /* Body Section */
+        .body-section {
+            padding: 30px 15px;
+            max-width: 700px;
             margin: 0 auto;
             text-align: center;
         }
         
-        h1 {
-            font-size: 2.5rem;
-            color: var(--primary-color);
-            margin-bottom: 15px;
+        .body-title {
+            color: #2c3e50;
+            font-size: 18px;
             font-weight: 700;
+            margin-bottom: 12px;
+            opacity: 0;
+            animation: slideInLeft 0.6s ease 1s forwards;
         }
         
-        .subtitle {
-            font-size: 1.5rem;
-            color: var(--accent-color);
-            margin-bottom: 30px;
+        @keyframes slideInLeft {
+            0% {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        .body-description {
+            color: #000000;
+            font-size: 15px;
+            margin-bottom: 25px;
+            line-height: 1.5;
+            opacity: 0;
+            animation: slideInRight 0.6s ease 1.2s forwards;
+        }
+        
+        @keyframes slideInRight {
+            0% {
+                opacity: 0;
+                transform: translateX(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        /* Button - ছোট সাইজ */
+        .button-container {
+            opacity: 0;
+            animation: fadeInScale 0.6s ease 1.4s forwards;
+        }
+        
+        @keyframes fadeInScale {
+            0% {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        
+        .listing-button {
+            display: inline-block;
+            background-color: #e74c3c;
+            color: white;
+            padding: 10px 25px;
+            font-size: 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 3px 6px rgba(231, 76, 60, 0.2);
             font-weight: 600;
         }
         
-        .description {
-            font-size: 1.2rem;
-            color: var(--dark-color);
-            margin-bottom: 40px;
-            line-height: 1.7;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
+        .listing-button:hover {
+            background-color: #c0392b;
+            box-shadow: 0 4px 12px rgba(231, 76, 60, 0.4);
+            transform: translateY(-2px);
         }
         
-        /* CTA Button */
-        .cta-container {
-            margin: 40px 0;
-        }
-        
-        .cta-button {
-            display: inline-block;
-            background-color: var(--accent-color);
-            color: white;
-            font-size: 1.4rem;
-            font-weight: 700;
-            padding: 18px 45px;
-            border-radius: var(--border-radius);
-            text-decoration: none;
-            transition: var(--transition);
-            box-shadow: 0 4px 15px rgba(231, 111, 81, 0.3);
-            border: none;
-            cursor: pointer;
-        }
-        
-        .cta-button:hover {
-            background-color: #d65c3e;
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(231, 111, 81, 0.4);
-        }
-        
-        /* Benefits List */
-        .benefits {
-            max-width: 800px;
-            margin: 50px auto 0;
-            text-align: left;
-            background-color: var(--light-color);
-            padding: 30px;
-            border-radius: var(--border-radius);
-            box-shadow: var(--shadow);
-        }
-        
-        .benefits h2 {
-            color: var(--primary-color);
-            margin-bottom: 20px;
+        /* Copyright */
+        .copyright-section {
             text-align: center;
-            font-size: 1.8rem;
+            padding: 20px 15px;
+            color: #7f8c8d;
+            font-size: 13px;
+            border-top: 1px solid #e9ecef;
+            margin-top: 30px;
+            opacity: 0;
+            animation: fadeIn 0.8s ease 1.6s forwards;
         }
         
-        .benefits-list {
-            list-style-type: none;
-            font-size: 1.1rem;
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
         }
         
-        .benefits-list li {
-            margin-bottom: 15px;
-            padding-left: 30px;
-            position: relative;
-        }
-        
-        .benefits-list li:before {
-            content: "✓";
-            color: var(--accent-color);
-            font-weight: bold;
-            position: absolute;
-            left: 0;
-        }
-        
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 30px 0;
-            margin-top: 50px;
-            border-top: 1px solid #eee;
-            color: var(--gray-color);
-            font-size: 0.9rem;
-        }
-        
-        /* Responsive Design */
+        /* Mobile Responsive */
         @media (max-width: 768px) {
-            .container {
-                padding: 0 15px;
+            .hero-title {
+                font-size: 20px;
             }
             
-            header {
-                padding: 30px 0 15px;
+            .body-title {
+                font-size: 17px;
             }
             
-            .logo {
-                font-size: 1.8rem;
+            .body-description {
+                font-size: 14px;
             }
             
-            h1 {
-                font-size: 2rem;
-            }
-            
-            .subtitle {
-                font-size: 1.3rem;
-            }
-            
-            .description {
-                font-size: 1.1rem;
-                padding: 0 10px;
-            }
-            
-            .cta-button {
-                font-size: 1.2rem;
-                padding: 16px 35px;
-            }
-            
-            .benefits {
-                padding: 25px 20px;
-                margin: 40px 10px 0;
-            }
-            
-            .benefits h2 {
-                font-size: 1.5rem;
+            .listing-button {
+                padding: 9px 22px;
+                font-size: 14px;
             }
         }
         
         @media (max-width: 480px) {
-            h1 {
-                font-size: 1.7rem;
+            .hero-title {
+                font-size: 18px;
             }
             
-            .subtitle {
-                font-size: 1.2rem;
+            .body-title {
+                font-size: 16px;
             }
             
-            .description {
-                font-size: 1rem;
+            .listing-button {
+                padding: 8px 20px;
+                font-size: 14px;
             }
-            
-            .cta-button {
-                font-size: 1.1rem;
-                padding: 15px 30px;
-                width: 100%;
-                text-align: center;
-            }
-        }
-        
-        /* Accessibility */
-        .sr-only {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            padding: 0;
-            margin: -1px;
-            overflow: hidden;
-            clip: rect(0, 0, 0, 0);
-            white-space: nowrap;
-            border: 0;
-        }
-        
-        /* Focus styles for accessibility */
-        .cta-button:focus {
-            outline: 3px solid var(--primary-color);
-            outline-offset: 3px;
         }
     </style>
+    
+    <title>Rent To Own Club | Find Your Dream Home Today</title>
 </head>
 <body>
-    <div class="container">
-        <!-- Header -->
-        <header>
-            <div class="logo">Rent To Own<span>Club</span></div>
-        </header>
-        
-        <!-- Main Content -->
-        <main>
-            <!-- Hero Image -->
-            <div class="hero-image">
-                <img src="https://i.ibb.co.com/GQ8v16sR/cr-w-1333-h-1000.jpg" alt="Beautiful modern home available through Rent To Own Club">
-            </div>
-            
-            <!-- Content Section -->
-            <div class="content">
-                <h1>🏠 Your Path to Homeownership Starts Here!</h1>
-                <p class="subtitle">Join Our Rent To Own Club Today!</p>
-                
-                <div class="description">
-                    <p>Stop throwing money away on rent! Our program helps you move into your dream home with low down payments. Discover a smarter way to own a home.</p>
-                </div>
-                
-                <!-- CTA Button -->
-                <div class="cta-container">
-                    <a href="https://www.chd93jds.com/2686CZWN/3QQG7/" class="cta-button" id="main-cta">
-                        Find Your Dream Home
-                    </a>
-                </div>
-                
-                <!-- Benefits Section -->
-                <div class="benefits">
-                    <h2>Why Choose Rent To Own Club?</h2>
-                    <ul class="benefits-list">
-                        <li><strong>No Credit Check Required</strong> - Your credit score won't stop you from owning a home</li>
-                        <li><strong>Low Down Payment</strong> - Get started with minimal upfront costs</li>
-                        <li><strong>Build Equity While You Rent</strong> - A portion of your payment goes toward your purchase</li>
-                        <li><strong>Flexible Terms</strong> - Choose a timeline that works for your financial situation</li>
-                        <li><strong>Professional Guidance</strong> - Our experts help you through every step of the process</li>
-                    </ul>
-                </div>
-            </div>
-        </main>
-        
-        <!-- Footer -->
-        <footer>
-            <p>Copyright © 2025. All rights reserved.</p>
-            <p style="margin-top: 10px; font-size: 0.8rem;">Rent To Own Club is a housing assistance program that helps individuals transition from renting to homeownership.</p>
-        </footer>
-    </div>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <h1 class="hero-title">Rent To Own Club</h1>
+        <div class="hero-image-container">
+            <img src="https://i.ibb.co.com/GQ8v16sR/cr-w-1333-h-1000.jpg" 
+                 alt="Modern Dream Home - Rent To Own Program" 
+                 class="hero-image">
+        </div>
+    </section>
     
-    <!-- Simple JavaScript for tracking and interactions -->
+    <!-- Body Section -->
+    <section class="body-section">
+        <h2 class="body-title">Find Your Dream Home Today</h2>
+        <p class="body-description">
+            Explore available homes in your area. Flexible payment options with no credit check required. Start your journey to homeownership now.
+        </p>
+        <div class="button-container">
+            <a href="https://www.chd93jds.com/2686CZWN/3QQG7/" 
+               class="listing-button" 
+               target="_blank">
+                View Listings
+            </a>
+        </div>
+    </section>
+    
+    <!-- Copyright Section -->
+    <footer class="copyright-section">
+        Copyright © 2025. All rights reserved.
+    </footer>
+
     <script>
+        // ওয়ান-টাইম অ্যানিমেশন - শুধু প্রথম লোডে
         document.addEventListener('DOMContentLoaded', function() {
-            // Track CTA clicks
-            const ctaButton = document.getElementById('main-cta');
+            // সব অ্যানিমেশন একবার চলবে
+            console.log('ল্যান্ডিং পেজ লোড হয়েছে - অ্যানিমেশন চলছে');
             
-            ctaButton.addEventListener('click', function() {
-                // In a real implementation, you would send this data to analytics
-                console.log('CTA clicked - Redirecting to application');
-                
-                // Optional: You could add a slight delay to track the click before redirecting
+            // Simple button click animation
+            const button = document.querySelector('.listing-button');
+            button.addEventListener('click', function(e) {
+                // Simple feedback effect
+                this.style.transform = 'scale(0.95)';
                 setTimeout(() => {
-                    window.location.href = this.href;
-                }, 100);
-            });
-            
-            // Ensure smooth scrolling for any anchor links
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    
-                    const targetId = this.getAttribute('href');
-                    if (targetId === '#') return;
-                    
-                    const targetElement = document.querySelector(targetId);
-                    if (targetElement) {
-                        window.scrollTo({
-                            top: targetElement.offsetTop - 20,
-                            behavior: 'smooth'
-                        });
-                    }
-                });
+                    this.style.transform = '';
+                }, 200);
             });
         });
+        
+        // Prevent animations on page refresh if already seen
+        let animationPlayed = sessionStorage.getItem('animationPlayed');
+        if (animationPlayed) {
+            // If already played in this session, remove animations
+            document.querySelectorAll('*').forEach(el => {
+                el.style.animation = 'none';
+                el.style.opacity = '1';
+                el.style.transform = 'none';
+            });
+        } else {
+            // Mark animation as played
+            sessionStorage.setItem('animationPlayed', 'true');
+        }
     </script>
 </body>
 </html>
